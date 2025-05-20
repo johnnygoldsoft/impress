@@ -11,12 +11,17 @@ const http = require("http");
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server);
+const os = require("os");
 
-// Création du dossier uploads s'il n'existe pas
-const uploadsDir = path.join(__dirname, "uploads");
+const desktopDir = path.join(os.homedir(), "Desktop");
+
+// Chemin du dossier uploads sur le bureau
+const uploadsDir = path.join(desktopDir, "uploads");
+
+// Vérifier si le dossier existe, sinon le créer
 if (!fs.existsSync(uploadsDir)) {
-  fs.mkdirSync(uploadsDir);
-  console.log("Dossier uploads créé.");
+  fs.mkdirSync(uploadsDir, { recursive: true });
+  console.log("Dossier uploads créé sur le bureau.");
 }
 
 // Configuration du stockage pour multer
