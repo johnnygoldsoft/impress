@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Upload Réussi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Animation d'apparition */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-in {
+        animation: fadeIn 0.8s ease-out;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center px-4">
+    <div class="bg-white rounded-lg shadow-lg p-8 max-w-lg w-full fade-in">
+      <div class="text-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-16 w-16 text-green-500 mx-auto mb-4"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9 12l2 2 4-4m0 6a9 9 0 11-6-7.28A9 9 0 0112 21z"
+          />
+        </svg>
+        <h1 class="text-2xl font-bold text-gray-800 mb-4">
+          Fichier Uploadé Avec Succès !
+        </h1>
+        <p class="text-gray-600 mb-6">
+          Merci d'avoir utilisé notre service. Votre fichier a été correctement
+          transféré et est prêt pour l'impression.
+        </p>
+        <a
+          href="/"
+          class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md transition-colors inline-block"
+        >
+          Retour à la Page d'Upload
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

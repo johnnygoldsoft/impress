@@ -1,0 +1,34 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# dotenv environment variables
+.env
+
+# Compiled CSS
+public/styles/*.css
+
+# Build output
+dist/
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+.vscode/
