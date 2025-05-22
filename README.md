@@ -25,7 +25,7 @@ Une application de gestion des fichiers avec **Electron** et **Express**. Cette 
 1. Clonez le dépôt :
 
    ```bash
-   git clone https://github.com/votre-utilisateur/votre-projet.git
+   git clone https://github.com/johnnygoldsoft/impress.git
    cd votre-projet
    ```
 

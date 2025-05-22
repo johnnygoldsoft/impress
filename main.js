@@ -53,7 +53,7 @@ function createWindow() {
 electronApp.whenReady().then(async () => {
   try {
     // Trouver un port disponible
-    port = await portfinder.getPortPromise({ port: 3000 });
+    port = await portfinder.getPortPromise({ port: 80 });
 
     // Lier le serveur à toutes les interfaces réseau (0.0.0.0) au lieu de localhost
     serverInstance = server.listen(port, "0.0.0.0", () => {
